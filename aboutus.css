@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: skyblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*--- Navigation bar ---*/
+/* Sets the width and the height of the navbar */
+/* This padding and margin of 0 allows the image to be left aligned */
+.navbar {
+  height: auto;
+  padding: 15px;
+  overflow: auto;
+  display: block;
+  text-decoration: none;
+  background: #000000;
+}
+
+/*  Sets the logo and the test  */
+#logo {
+  vertical-align: middle;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Set the spacing between the links */
+.navbar-nav ul {
+  margin: 0px;
+  padding: 10px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  line-height: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+
+}
+
+/* As you hover each search link, it changes color */
+.nav-item a:hover {
+  background: #8a2be2;
+  color: black;
+  transition: .10s;
+}
+
+.display-5 {
+  margin: 5px;
+  padding-top: 5px;
+  background-color: darkblue;
+  color: #ffffff;
+  text-align: center;
+  height: 60px;
+  width: 100%;
+}
+
+/* this is the horizontal rule under the "About Me" Header title*/
+hr {
+  border-top: 1px solid;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/*  Main Body */
+.col-md-10 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin: auto;
+  font-size: large;
+}
+
+/* This section contains the team's images */
+.col-md-3 {
+  margin: auto;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #3458eb;
+  text-align: center;
+  color: white;
+}
+
+.row {
+  padding-top: 5px;
+  margin: auto;
+}
+
+/* Adding a border around each picture */
+.images {
+  border: 2px solid lightblue;
+  border-radius: solid 4px;
+}
+
+/*--- Footer Section ---*/
+/* Fix the footer to the bottom of the page as you scroll down or up */
+footer {
+  position: sticky;
+  bottom: 0;
+  padding: 0;
+  width: 100%;
+  height: 45px;
+  margin-top: 10px;
+  background: skyblue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+footer p {
+  color: bisque;
+}

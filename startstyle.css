@@ -1,0 +1,146 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/*--- Navigation bar ---*/
+/* Sets the width and the height of the navbar */
+/* This padding and margin of 0 allows the image to be left aligned */
+.navbar {
+  height: auto;
+  padding: 15px;
+  overflow: auto;
+  display: block;
+  text-decoration: none;
+  background: #000000;
+}
+
+/*  Sets the logo and the test  */
+#logo {
+  vertical-align: middle;
+}
+
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Set the spacing between the links */
+.navbar-nav ul {
+  margin: 0px;
+  padding: 10px;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  line-height: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+
+}
+
+/* As you hover each search link, it changes color */
+.nav-item a:hover {
+  background: #8a2be2;
+  color: black;
+  transition: .10s;
+}
+
+.navbar-collapse {
+  justify-content: right;
+}
+
+/*--- Background Container ---*/
+.container-fluid {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+/*  Background Container with Music Image */
+.header {
+  background-image: url(favicon_note.png);
+  background-repeat: no-repeat;
+  background-size: 350px;
+  /* for favicon*/
+  background-position: center;
+  position: relative;
+  height: 450px;
+  width: 100%;
+}
+
+/*This box overlays the backgroud container*/
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  transform: translate(-50%, -55%);
+  text-align: left;
+}
+
+.description h1 {
+  color: #8a2be2;
+}
+
+.description p {
+  color: bisque;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+a.btn {
+  background: #8a2be2;
+  color: #000000;
+}
+
+/*--- Footer Section ---*/
+/* Fix the footer to the bottom of the page as you scroll down or up */
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+  width: 100%;
+  height: 45px;
+  margin-top: 0;
+  background-color: rebeccapurple;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+footer p {
+  color: bisque;
+}

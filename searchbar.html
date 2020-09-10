@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CDN-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <!--jQuery Import-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <!--Bootstrap JavaScript-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+
+  <!--Local's Custom CSS File-->
+  <link rel="stylesheet" type="text/css" href="searchstyle.css">
+
+  <!-- Favicon Img-->
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_note.png">
+  
+  <title>N0teDr0p Project</title>
+</head>
+
+<body>
+  <!-- Nav Bar Section-->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"> -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-info sticky-top">
+    <div class="container-body">
+      <img class="logo" alt="N0teDr0p- Our Brand" src="favicon_note.png" width="45" height="35">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <!-- <aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">Project Information</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="searchbar.html">Search</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--HEADER AND SEARCH BAR-->
+  <header>
+    <h1>N0teDr0p</h1>
+    <h6>It only takes one drop to produce strings to call
+      the correct function for your music passion.</h6>
+    <input type="text" id="inputBox" placeholder="Enter an Artist here!">
+    <br>
+    <button type="submit" id="searchBtn">Discover Music</button>
+  </header>
+
+  <!--SEARCH RESULTS AND EVENT INFO-->
+  <div class="row">
+    <div class="col" id="resultsContainer">
+      <h3 id="artistName"></h3>
+      <div class="row" id="results">
+        <div class="col-md-4" id="artistImage">
+          <img>
+        </div>
+        <div class="col-md-4" id="artistInfo">
+          <div>
+            <p id="topHits"></p>
+          </div>
+          <div><a id="hit1" href="#" target="blank"></a></div>
+          <div><a id="hit2" href="#" target="blank"></a></div>
+          <div><a id="hit3" href="#" target="blank"></a></div>
+          <div><a id="hit4" href="#" target="blank"></a></div>
+          <div><a id="hit5" href="#" target="blank"></a></div>
+          <div><a id="hit6" href="#" target="blank"></a></div>
+          <div><a id="hit7" href="#" target="blank"></a></div>
+          <div><a id="hit8" href="#" target="blank"></a></div>
+          <div><a id="hit9" href="#" target="blank"></a></div>
+          <div><a id="hit10" href="#" target="blank"></a></div>
+        </div>
+        <div class="col-md-4" id="artistEvents">
+          <p id="venueUpcoming"></p>
+          <p id="venueDate"></p>
+          <p id="venueLocation"></p>
+          <p id="venueName"></p>
+          <a id="venueTickets" href="#" target="blank"></a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FOOTER-->
+  <footer>
+    <p><small>~~~~~Made by Troy Berentsen, Christopher Crook, Kevin Kouassi, Wendy Hintzen and Rocio ~~~~~
+        <br>
+        &copy; 2020
+      </small></p>
+  </footer>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="searchscript.js"></script>
+</body>
+
+</html>
